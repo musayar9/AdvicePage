@@ -9,8 +9,8 @@ btnRandom.addEventListener("click", ()=>{
 })
 
 async function  showAdvice() {
-
-    const url = "https://api.adviceslip.com/advice"
+try{
+  const url = "https://api.adviceslip.com/advice"
 
     const response = await fetch(url)
    
@@ -22,7 +22,11 @@ async function  showAdvice() {
 
 
     adviceText.innerText =  `"${result}"`
-    adviceId.innerHTML = `<span>#${Id}</span>`
+    adviceId.innerHTML = `<span>Advice #${Id}</span>`
+}catch(err){
+  console.log(err)
+}
+  
 
 }
 
