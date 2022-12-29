@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html{
+    font-size: 28px;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color:hsl(218, 23%, 16%);
+   
+}
+
+.container{
+
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    margin: 50.0rem;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 0.4rem;
+    padding:1.8rem 2.2rem;
+    background-color: hsl(217, 19%, 24%) ;
+    color:hsl(193, 38%, 86%) ;
+    font-family: 'Manrope', sans-serif;;
+}
+
+.idNum{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: hsl(150, 100%, 66%);
+    padding: 1.2rem;
+}
+
+.advice-text{
+    display: flex;
+    padding: 0.8rem;
+}
+
+
+
+.line{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+.advice-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+ul li{
+    margin: 0.5rem;
+    cursor: pointer;
+
+
+}
+
+.btn i,.sound i, .copy i {
+
+    border-radius: 50%;
+    padding: 0.5rem;
+    border: 1px solid hsl(150, 100%, 66%);
+    background-color: hsl(150, 100%, 66%);
+    font-size: .8rem;
+    color: hsl(217, 19%, 24%);
+
+}
+
+
+.btn i:hover, .sound i:hover, .copy i:hover{
+    box-shadow: 0 0 2.0rem hsl(150, 100%, 66%);
+    transform:translateY(5px)
+
+}
+
+@media screen and (max-width:375px){
+    html{
+        font-size: 20px;
+    }
+
+
+    .container{
+        width: 344px;
+        padding: .8rem;
+    }
+
+
+    .btn, .sound,.copy {        
+        position:relative;
+        margin-left:2rem;
+    }
+ 
+    .btn i, .sound i, .copy i{
+        position:absolute;
+        margin-top:0.5rem;
+        margin-left:-1.5rem;
+        padding:.5rem;
+    }
+
+}
